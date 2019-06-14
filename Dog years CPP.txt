@@ -1,0 +1,24 @@
+#include <iostream>
+
+int main() {
+  
+  //this declares a variable to the number of years of how old the dog is
+  int dog_age = 9;
+  
+  //declaring early years as a value of 21
+  int early_years = 21;
+  
+  //first 2 yrs at a different value, so removing the first two and all
+  //else are 4 years
+  int later_years = (dog_age - 2) * 4;
+  
+  //declare human years
+  int human_years;
+  
+  //calculate dog years into human years
+  human_years = early_years + later_years;
+  
+  //communicate with user dog years
+  std::cout << "My name is Charlie! Ruff ruff, I am " << human_years << " years old in human years.\n";
+
+}
