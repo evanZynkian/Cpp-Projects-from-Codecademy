@@ -1,0 +1,51 @@
+#include <iostream>
+
+int main() {
+  
+  //initializing weight
+  int earthWeight = 0;
+  
+  //allowing response via a string <- having issues with this
+  string planet = "";
+  
+  //since gravity numbers are floating numbers initialize as a double
+  double fightingGravity;
+  
+  //initializing planet gravitational difference
+  double venus = 0.78;
+  double mars = 0.39;
+  double jupiter = 2.65;
+  double saturn = 1.17;
+    
+  std::cout << "what is your earth weight?\n";
+  std::cin >> earthWeight;
+  
+  std::cout << "Where should the battle take place?\n";
+  std::cin >> planet;
+  
+  //decided to go with an if statement but could have done a switch
+  if (planet == Venus) {
+    fightingGravity = venus * earthWeight;
+    std::cout << "You fighting weight on " << planet << " will be " << fightingGravity << ".\n";
+  }
+  
+  else if (planet == Mars) {
+    fightingGravity = mars * earthWeight;
+    std::cout << "You fighting weight on " << planet << " will be " << fightingGravity << ".\n";
+  }
+  
+  else if (planet == Jupiter) {
+    fightingGravity = jupiter * earthWeight;
+    std::cout << "You fighting weight on " << planet << " will be " << fightingGravity << ".\n";
+  }
+  
+  else if (planet = Saturn) {
+    fightingGravity = saturn * earthWeight;
+    std::cout << "You fighting weight on " << planet << " will be " << fightingGravity << ".\n";
+  }
+  
+  //added this statement just in case 
+  else {
+    std::cout << "Thats not a planet you may do battle on!!!";
+  } 
+}
