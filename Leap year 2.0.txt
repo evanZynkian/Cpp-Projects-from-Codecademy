@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main() {
+
+  int leapyear = 0;
+  
+  std::cout << "Enter a year:\n";
+  std::cin >> leapyear;
+  
+  if (leapyear <= 9999 && leapyear > 999 && leapyear % 4 == 0 && leapyear % 100 != 0 || leapyear % 400 == 0) {
+    std::cout << leapyear << " is a leapyear\n";
+  }
+  else {
+    std::cout << "not a leap year dammit!";
+  }  
+  
+}
